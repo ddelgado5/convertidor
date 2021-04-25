@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de moneda</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js"></script>
+</head>
+<body onload="loadDocument()">
+    
+    <main>
+        <div class="container">
+            <form action="" id="form">
+                <div>
+                    <label>Moneda: </label>
+                    <input type="number" min="0" id="valueInput" autofocus>
+                    <!-- stape ="10    ---- par aincrementar de 10 en 10 " -->
+                    <select id="formChange">
+                        <option value="1">Pesos</option>
+                        <option    ion value="2">Dolares</option>
+                        <!-- <option value="3">Euros</option> -->
+                    </select>
+
+                </div>
+                
+                <div class="form-to container">
+                    <label>Convertir a: </label>
+
+                    <select id="toChange" name="">
+                        <option value="1">Pesos</option>
+                        <option value="2">Dolares</option>
+                        <!-- <option value="3">Euros</option> -->
+                    </select>
+                </div>
+
+
+                <div>
+                    <input type="submit" value="Convertir">
+                </div>
+
+                <p class="container-result"> </p>
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>
