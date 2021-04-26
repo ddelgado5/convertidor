@@ -19,6 +19,14 @@ function loadDocument(){
 
 
     })
+
+    window.addEventListener('online', () =>{
+        const $containerResult = document.querySelectorAll('.container-result')[0]
+        $containerResult.style.color = "black"
+        setText($containerResult, "")
+
+
+    })
 }
 
 
