@@ -4,10 +4,14 @@ function loadDocument(){
     const $form = document.getElementById('form')
     console.log("$form: " + $form)
     const $input = document.querySelector('#valueInput')
+    const $formChange = document.querySelector('#formChange')
+    const $toChange = document.querySelector('#toChange')
 
 
     $form.addEventListener('submit', handleSubmit)
-    $input.addEventListener('keypress', convert)
+    $input.addEventListener('input', convert)
+    $formChange.addEventListener('change', convert)
+    $toChange.addEventListener('change', convert)
     window.addEventListener('offline', () =>{
         const $containerResult = document.querySelectorAll('.container-result')[0]
         $containerResult.style.color = "red"
